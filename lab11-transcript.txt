@@ -1,0 +1,498 @@
+Python 3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+
+=================== RESTART: C:\Users\elicr\Downloads\main.py ==================
+Traceback (most recent call last):
+  File "C:\Users\elicr\Downloads\main.py", line 2, in <module>
+    from PhoneBook import PhoneBook  # Imports the class
+  File "C:\Users\elicr\Downloads\PhoneBook.py", line 31
+    newContact = Contact(c["name"],c["number"],c["email"],c["birthday"]
+                        ^
+SyntaxError: '(' was never closed
+
+=================== RESTART: C:\Users\elicr\Downloads\main.py ==================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   Testing Contact Class                    
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Testing getName
+------------------------------------------------------------
+Expected Results
+Nick J Mobley
+Larry Gates
+Sup a man
+This Little Name
+Your Results ~~~~~~~~~~~~~~~~~~~~
+Nick J Mobley
+Larry Gates
+Sup a man
+This Little Name
+------------------------------------------------------------
+Testing __str__
+------------------------------------------------------------
+Expected Results
+Contact: Nick J Mobley - (8123357216)
+Contact: Larry Gates - (48138138)
+Contact: Sup a man - (8541836418)
+Contact: This Little Name - (123456789)
+Your Results ~~~~~~~~~~~~~~~~~~~
+Contact: Nick J Mobley - (8123357216)
+Contact: Larry Gates - (48138138)
+Contact: Sup a man - (8541836418)
+Contact: This Little Name - (123456789)
+------------------------------------------------------------
+Testing call
+------------------------------------------------------------
+Expected Results
+Dialing Nick ...
+Leave a voicemail: <user types message>
+<message is printed>
+... (same pattern for each contact)
+Your Results
+Dialing Nick...
+Leave a voicemail: Call me back
+Traceback (most recent call last):
+  File "C:\Users\elicr\Downloads\main.py", line 95, in <module>
+    c1.call()
+  File "C:\Users\elicr\Downloads\Contact.py", line 61, in call
+    print(message)
+NameError: name 'message' is not defined
+
+=================== RESTART: C:\Users\elicr\Downloads\main.py ==================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   Testing Contact Class                    
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Testing getName
+------------------------------------------------------------
+Expected Results
+Nick J Mobley
+Larry Gates
+Sup a man
+This Little Name
+Your Results ~~~~~~~~~~~~~~~~~~~~
+Nick J Mobley
+Larry Gates
+Sup a man
+This Little Name
+------------------------------------------------------------
+Testing __str__
+------------------------------------------------------------
+Expected Results
+Contact: Nick J Mobley - (8123357216)
+Contact: Larry Gates - (48138138)
+Contact: Sup a man - (8541836418)
+Contact: This Little Name - (123456789)
+Your Results ~~~~~~~~~~~~~~~~~~~
+Contact: Nick J Mobley - (8123357216)
+Contact: Larry Gates - (48138138)
+Contact: Sup a man - (8541836418)
+Contact: This Little Name - (123456789)
+------------------------------------------------------------
+Testing call
+------------------------------------------------------------
+Expected Results
+Dialing Nick ...
+Leave a voicemail: <user types message>
+<message is printed>
+... (same pattern for each contact)
+Your Results
+Dialing Nick...
+Leave a voicemail: Hi
+<built-in function input>
+Dialing Larry...
+Leave a voicemail: 
+<built-in function input>
+Dialing Sup...
+Leave a voicemail: 
+<built-in function input>
+Dialing This...
+Leave a voicemail: 
+<built-in function input>
+------------------------------------------------------------
+Testing sendBirthdayText
+------------------------------------------------------------
+Expected Results
+To Nick:
+	Happy Birthday Nick!
+
+To Larry:
+	Happy Birthday Larry!
+To Sup:
+	Happy Birthday Sup!
+To This:
+	Happy Birthday This!
+Your Results:
+To Nick: 
+	Happy Birthday Nick!
+To Larry: 
+	Happy Birthday Larry!
+To Sup: 
+	Happy Birthday Sup!
+To This: 
+	Happy Birthday This!
+------------------------------------------------------------
+Testing updateNumber
+------------------------------------------------------------
+Expected Results
+Contact: Nick J Mobley - (48128546)
+Contact: Larry Gates - (48126879)
+Contact: Sup a man - (48430546)
+Contact: This Little Name - (26979487)
+Your Results ~~~~~~~~~~~~~~~~~~~
+Contact: Nick J Mobley - (48128546)
+Contact: Larry Gates - (48126879)
+Contact: Sup a man - (48430546)
+Contact: This Little Name - (26979487)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                  Testing PhoneBook Class                   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Testing get_all_contacts (addContact)
+Traceback (most recent call last):
+  File "C:\Users\elicr\Downloads\main.py", line 143, in <module>
+    get_all_contacts(PB)
+  File "C:\Users\elicr\Downloads\main.py", line 16, in get_all_contacts
+    f = open("Laboratory/Lab10/contacts.txt", "r")
+FileNotFoundError: [Errno 2] No such file or directory: 'Laboratory/Lab10/contacts.txt'
+
+=================== RESTART: C:\Users\elicr\Downloads\main.py ==================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   Testing Contact Class                    
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Testing getName
+------------------------------------------------------------
+Expected Results
+Nick J Mobley
+Larry Gates
+Sup a man
+This Little Name
+Your Results ~~~~~~~~~~~~~~~~~~~~
+Nick J Mobley
+Larry Gates
+Sup a man
+This Little Name
+------------------------------------------------------------
+Testing __str__
+------------------------------------------------------------
+Expected Results
+Contact: Nick J Mobley - (8123357216)
+Contact: Larry Gates - (48138138)
+Contact: Sup a man - (8541836418)
+Contact: This Little Name - (123456789)
+Your Results ~~~~~~~~~~~~~~~~~~~
+Contact: Nick J Mobley - (8123357216)
+Contact: Larry Gates - (48138138)
+Contact: Sup a man - (8541836418)
+Contact: This Little Name - (123456789)
+------------------------------------------------------------
+Testing call
+------------------------------------------------------------
+Expected Results
+Dialing Nick ...
+Leave a voicemail: <user types message>
+<message is printed>
+... (same pattern for each contact)
+Your Results
+Dialing Nick...
+Leave a voicemail: hi
+hi
+Dialing Larry...
+Leave a voicemail: call me back
+call me back
+Dialing Sup...
+Leave a voicemail: sup
+sup
+Dialing This...
+Leave a voicemail: this
+this
+------------------------------------------------------------
+Testing sendBirthdayText
+------------------------------------------------------------
+Expected Results
+To Nick:
+	Happy Birthday Nick!
+To Larry:
+	Happy Birthday Larry!
+To Sup:
+	Happy Birthday Sup!
+To This:
+	Happy Birthday This!
+Your Results:
+To Nick: 
+	Happy Birthday Nick!
+To Larry: 
+	Happy Birthday Larry!
+To Sup: 
+	Happy Birthday Sup!
+To This: 
+	Happy Birthday This!
+------------------------------------------------------------
+Testing updateNumber
+------------------------------------------------------------
+Expected Results
+Contact: Nick J Mobley - (48128546)
+Contact: Larry Gates - (48126879)
+Contact: Sup a man - (48430546)
+Contact: This Little Name - (26979487)
+Your Results ~~~~~~~~~~~~~~~~~~~
+Contact: Nick J Mobley - (48128546)
+Contact: Larry Gates - (48126879)
+Contact: Sup a man - (48430546)
+Contact: This Little Name - (26979487)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                  Testing PhoneBook Class                   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Testing get_all_contacts (addContact)
+Traceback (most recent call last):
+  File "C:\Users\elicr\Downloads\main.py", line 143, in <module>
+    get_all_contacts(PB)
+  File "C:\Users\elicr\Downloads\main.py", line 16, in get_all_contacts
+    f = open("Laboratory/Lab10/contacts.txt", "r")
+FileNotFoundError: [Errno 2] No such file or directory: 'Laboratory/Lab10/contacts.txt'
+
+=================== RESTART: C:\Users\elicr\Downloads\main.py ==================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   Testing Contact Class                    
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Testing getName
+------------------------------------------------------------
+Expected Results
+Nick J Mobley
+Larry Gates
+Sup a man
+This Little Name
+Your Results ~~~~~~~~~~~~~~~~~~~~
+Nick J Mobley
+Larry Gates
+Sup a man
+This Little Name
+------------------------------------------------------------
+Testing __str__
+------------------------------------------------------------
+Expected Results
+Contact: Nick J Mobley - (8123357216)
+Contact: Larry Gates - (48138138)
+Contact: Sup a man - (8541836418)
+Contact: This Little Name - (123456789)
+Your Results ~~~~~~~~~~~~~~~~~~~
+Contact: Nick J Mobley - (8123357216)
+Contact: Larry Gates - (48138138)
+Contact: Sup a man - (8541836418)
+Contact: This Little Name - (123456789)
+------------------------------------------------------------
+Testing call
+------------------------------------------------------------
+Expected Results
+Dialing Nick ...
+Leave a voicemail: <user types message>
+<message is printed>
+... (same pattern for each contact)
+Your Results
+Dialing Nick...
+Leave a voicemail: hi
+hi
+Dialing Larry...
+Leave a voicemail: larry
+larry
+Dialing Sup...
+Leave a voicemail: sup
+sup
+Dialing This...
+Leave a voicemail: this
+this
+------------------------------------------------------------
+Testing sendBirthdayText
+------------------------------------------------------------
+Expected Results
+To Nick:
+	Happy Birthday Nick!
+To Larry:
+	Happy Birthday Larry!
+To Sup:
+	Happy Birthday Sup!
+To This:
+	Happy Birthday This!
+Your Results:
+To Nick: 
+	Happy Birthday Nick!
+To Larry: 
+	Happy Birthday Larry!
+To Sup: 
+	Happy Birthday Sup!
+To This: 
+	Happy Birthday This!
+------------------------------------------------------------
+Testing updateNumber
+------------------------------------------------------------
+Expected Results
+Contact: Nick J Mobley - (48128546)
+Contact: Larry Gates - (48126879)
+Contact: Sup a man - (48430546)
+Contact: This Little Name - (26979487)
+Your Results ~~~~~~~~~~~~~~~~~~~
+Contact: Nick J Mobley - (48128546)
+Contact: Larry Gates - (48126879)
+Contact: Sup a man - (48430546)
+Contact: This Little Name - (26979487)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                  Testing PhoneBook Class                   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Testing get_all_contacts (addContact)
+Data from the file
+['Larry Gates, 1111111111, gatesls@iu.edu, 1.1.1990', 'Josh Baker, 2222222222, josh@iu.edu, 2.20.1995', 'Dr. M Dalkilic, 3333333333, dalkilic@indiana.edu, 4.29.1930', 'Dr. D Williamson, 4444444444, Williamson#indiana.edu, 12.21.1980']
+
+Contact: Larry Gates - (1111111111)
+Contact: Josh Baker - (2222222222)
+Contact: Dr. M Dalkilic - (3333333333)
+Contact: Dr. D Williamson - (4444444444)
+
+Phone Book: 4
+
+------------------------------
+Testing addContact with a dictionary
+	 Contact: Larry Gates - (1111111111)
+	 Contact: Josh Baker - (2222222222)
+	 Contact: Dr. M Dalkilic - (3333333333)
+	 Contact: Dr. D Williamson - (4444444444)
+	 Contact: Nick J Mobley - (8123357216)
+
+------------------------------
+Testing getContactCount (result should be 5)
+	 5 True
+
+------------------------------
+Testing findContact
+Traceback (most recent call last):
+  File "C:\Users\elicr\Downloads\main.py", line 171, in <module>
+    print("\tLooking for `{}` and found {}".format("Mobley", PB.findContact("Mobley")))
+  File "C:\Users\elicr\Downloads\PhoneBook.py", line 50, in findContact
+    for contact in contactList:
+NameError: name 'contactList' is not defined. Did you mean: 'self.contactList'?
+
+=================== RESTART: C:\Users\elicr\Downloads\main.py ==================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   Testing Contact Class                    
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Testing getName
+------------------------------------------------------------
+Expected Results
+Nick J Mobley
+Larry Gates
+Sup a man
+This Little Name
+Your Results ~~~~~~~~~~~~~~~~~~~~
+Nick J Mobley
+Larry Gates
+Sup a man
+This Little Name
+------------------------------------------------------------
+Testing __str__
+------------------------------------------------------------
+Expected Results
+Contact: Nick J Mobley - (8123357216)
+Contact: Larry Gates - (48138138)
+Contact: Sup a man - (8541836418)
+Contact: This Little Name - (123456789)
+Your Results ~~~~~~~~~~~~~~~~~~~
+Contact: Nick J Mobley - (8123357216)
+Contact: Larry Gates - (48138138)
+Contact: Sup a man - (8541836418)
+Contact: This Little Name - (123456789)
+------------------------------------------------------------
+Testing call
+------------------------------------------------------------
+Expected Results
+Dialing Nick ...
+Leave a voicemail: <user types message>
+<message is printed>
+... (same pattern for each contact)
+Your Results
+Dialing Nick...
+Leave a voicemail: hi
+hi
+Dialing Larry...
+Leave a voicemail: larry
+larry
+Dialing Sup...
+Leave a voicemail: sup
+sup
+Dialing This...
+Leave a voicemail: this
+this
+------------------------------------------------------------
+Testing sendBirthdayText
+------------------------------------------------------------
+Expected Results
+To Nick:
+	Happy Birthday Nick!
+To Larry:
+	Happy Birthday Larry!
+To Sup:
+	Happy Birthday Sup!
+To This:
+	Happy Birthday This!
+Your Results:
+To Nick: 
+	Happy Birthday Nick!
+To Larry: 
+	Happy Birthday Larry!
+To Sup: 
+	Happy Birthday Sup!
+To This: 
+	Happy Birthday This!
+------------------------------------------------------------
+Testing updateNumber
+------------------------------------------------------------
+Expected Results
+Contact: Nick J Mobley - (48128546)
+Contact: Larry Gates - (48126879)
+Contact: Sup a man - (48430546)
+Contact: This Little Name - (26979487)
+Your Results ~~~~~~~~~~~~~~~~~~~
+Contact: Nick J Mobley - (48128546)
+Contact: Larry Gates - (48126879)
+Contact: Sup a man - (48430546)
+Contact: This Little Name - (26979487)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                  Testing PhoneBook Class                   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Testing get_all_contacts (addContact)
+Data from the file
+['Larry Gates, 1111111111, gatesls@iu.edu, 1.1.1990', 'Josh Baker, 2222222222, josh@iu.edu, 2.20.1995', 'Dr. M Dalkilic, 3333333333, dalkilic@indiana.edu, 4.29.1930', 'Dr. D Williamson, 4444444444, Williamson#indiana.edu, 12.21.1980']
+
+Contact: Larry Gates - (1111111111)
+Contact: Josh Baker - (2222222222)
+Contact: Dr. M Dalkilic - (3333333333)
+Contact: Dr. D Williamson - (4444444444)
+
+Phone Book: 4
+
+------------------------------
+Testing addContact with a dictionary
+	 Contact: Larry Gates - (1111111111)
+	 Contact: Josh Baker - (2222222222)
+	 Contact: Dr. M Dalkilic - (3333333333)
+	 Contact: Dr. D Williamson - (4444444444)
+	 Contact: Nick J Mobley - (8123357216)
+
+------------------------------
+Testing getContactCount (result should be 5)
+	 5 True
+
+------------------------------
+Testing findContact
+	Looking for `Mobley` and found [Contact: Nick J Mobley - (8123357216)]
+	Looking for `Gate` and found []
+
+------------------------------
+Testing groupChat
+
+We are going to send a groupchat
+To Larry: 
+	I got your number saved
+To Josh: 
+	I got your number saved
+To Dr.: 
+	I got your number saved
+To Dr.: 
+	I got your number saved
+To Nick: 
+	I got your number saved
